@@ -5,6 +5,7 @@ using UnityEngine;
 public class SwitchPlayer : MonoBehaviour
 {
     public GameObject pic;
+    public bool changeGlasses;
 
     // AudioManager audioManager;
 
@@ -46,6 +47,17 @@ public class SwitchPlayer : MonoBehaviour
         else
         {
             pic2.SetActive(false);
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            changeGlasses = !changeGlasses;
+            print(changeGlasses);
+            Trigger();
+            Trigger2();
         }
     }
 
