@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -315,9 +315,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: ca93feff
+      m_SelectedIDs: 767c0000
+      m_LastClickedID: 31862
+      m_ExpandedIDs: 1ee7ffff26ecffff6c7b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -999,9 +999,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.7265873, y: 1.6839044, z: 3.4605331}
+    m_Target: {x: 3.1741428, y: 2.3060868, z: 5.6658363}
     speed: 2
-    m_Value: {x: 0.7265873, y: 1.6839044, z: 3.4605331}
+    m_Value: {x: 3.1741428, y: 2.3060868, z: 5.6658363}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1047,9 +1047,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.022401838, y: -0.9412265, z: 0.06395428, w: -0.33120143}
+    m_Target: {x: -0.02133528, y: -0.91277874, z: 0.048286725, w: -0.40526903}
     speed: 2
-    m_Value: {x: -0.021314692, y: -0.9418187, z: 0.061156318, w: -0.32982272}
+    m_Value: {x: -0.021260755, y: -0.9132967, z: 0.048313968, w: -0.40386006}
   m_Size:
     m_Target: 10.443957
     speed: 2
@@ -1225,7 +1225,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1235,16 +1235,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\corma\GameTools\GameTools\Game Tools - Shared Secrets
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b0430000
-    m_LastClickedID: 17328
-    m_ExpandedIDs: 00000000b0430000f0430000404400007c440000e844000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 91}
+    m_SelectedIDs: 827a0000
+    m_LastClickedID: 31362
+    m_ExpandedIDs: 00000000266b0000326b0000f4780000f6780000f8780000fa78000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1272,7 +1272,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b0430000404400007c440000e8440000
+    m_ExpandedIDs: 00000000f4780000f6780000f8780000fa780000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
