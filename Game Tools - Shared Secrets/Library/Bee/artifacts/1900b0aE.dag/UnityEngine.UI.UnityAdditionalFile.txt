@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 C:\Users\corma\GameTools\GameTools\Game Tools - Shared Secrets
+=======
+C:\GitHub\GameTools\Game Tools - Shared Secrets
+>>>>>>> origin/Ryan3
