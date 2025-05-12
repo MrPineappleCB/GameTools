@@ -367,7 +367,9 @@
 -analyzer:"C:/Program Files/Unity 2023.1.3f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity 2023.1.3f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/BasicPlayerMove1.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/ObjectPush.cs"
+"Assets/Scripts/SlidingPuzzle.cs"
 "Assets/Scripts/SwitchPlayer.cs"
 -langversion:9.0
 
