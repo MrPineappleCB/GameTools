@@ -6,6 +6,7 @@ public class SlidingPuzzle : MonoBehaviour
 {
   [SerializeField] private Transform gameTransform;
   [SerializeField] private Transform piecePrefab;
+  [SerializeField] private Camera cam;
 
   private List<Transform> pieces;
   private int emptyLocation;
@@ -64,7 +65,7 @@ public class SlidingPuzzle : MonoBehaviour
 
     // On click send out ray to see if we click a piece.
     if (Input.GetMouseButtonDown(0)) {
-      Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+      Ray ray = cam.ScreenPointToRay(Input.mousePosition);
       RaycastHit hit;
       if(Physics.Raycast(ray, out hit)) {
         // Go through the list, the index tells us the position.
