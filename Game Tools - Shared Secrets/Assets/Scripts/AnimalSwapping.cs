@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class AnimalSwapping : MonoBehaviour
 {
-    [SerializeField] private Transform tiger;
-    [SerializeField] private Transform unicorn;
-    [SerializeField] private Transform deer;
-    [SerializeField] private Transform hippo;
     [SerializeField] private Camera cam;
 
     private Transform object1;
     private Transform object2;
-    private Vector3 position1;
-    private Vector3 position2;
+    private Transform savedobject;
+    private int counter;
 
     // Start is called before the first frame update
     void Start()
@@ -30,16 +26,26 @@ public class AnimalSwapping : MonoBehaviour
             RaycastHit hit;
             if(Physics.Raycast(ray, out hit)) 
             {
-                object1 = hit.transform;
-                position1 = object1.position;
-            }
-            if(Physics.Raycast(ray, out hit) && position1 != null)
-            {
-                object2 = hit.transform;
-                position2 = object2.position;
-                object1.position = position2;
-                object2.position = position1;
+                if (counter < 1)
+                {
+                    object1 = hit.transform;
+                    counter++;
+                }
+                else
+                {
+                    object2 = hit.transform;
+                    SwapSelections();
+                    counter = 0;
+                }
             }
         }
+    }
+
+    void SwapSelections()
+    {
+        savedobject = object1;
+        object1 = object2;
+
+        object2 = savedobject;
     }
 }
