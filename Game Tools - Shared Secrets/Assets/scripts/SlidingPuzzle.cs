@@ -6,12 +6,14 @@ public class SlidingPuzzle : MonoBehaviour
 {
   [SerializeField] private Transform gameTransform;
   [SerializeField] private Transform piecePrefab;
+  [SerializeField] private GameObject chest;
   [SerializeField] private Camera cam;
 
   private List<Transform> pieces;
   private int emptyLocation;
   private int size;
   private bool shuffling = false;
+  
 
   // Create the game setup with size x size pieces.
   private void CreateGamePieces(float gapThickness) {
@@ -59,6 +61,7 @@ public class SlidingPuzzle : MonoBehaviour
   void Update() {
     // Check for completion.
     if (!shuffling && CheckCompletion()) {
+      
       shuffling = true;
       StartCoroutine(WaitShuffle(0.5f));
     }
@@ -104,6 +107,8 @@ public class SlidingPuzzle : MonoBehaviour
         return false;
       }
     }
+    chest.SetActive(true);
+    gameObject.SetActive(false);
     return true;
   }
 
