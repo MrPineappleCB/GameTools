@@ -6,8 +6,13 @@ m_ProjectFiles:
     m_ModificationDate:
       serializedVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       ticks: 638795670796035656
     m_Hash: 2475797477
+=======
+      ticks: 638826404024395989
+    m_Hash: 1912502641
+>>>>>>> Stashed changes
 =======
       ticks: 638826404024395989
     m_Hash: 1912502641
@@ -19,8 +24,13 @@ m_ProjectFiles:
     m_ModificationDate:
       serializedVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       ticks: 638795670796045656
     m_Hash: 4001973199
+=======
+      ticks: 638826404024423386
+    m_Hash: 68849382
+>>>>>>> Stashed changes
 =======
       ticks: 638826404024423386
     m_Hash: 68849382
@@ -3252,11 +3262,14 @@ m_ResolvedPackages:
   version: 2.0.1
   source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\corma\GameTools\GameTools\Game Tools - Shared Secrets\Library\PackageCache\com.unity.settings-manager@2.0.1
   assetPath: Packages/com.unity.settings-manager
   name: com.unity.settings-manager
   displayName: Settings Manager
 =======
+=======
+>>>>>>> Stashed changes
   resolvedPath: C:\Users\corma\GameTools\GameTools\Game Tools - Shared Secrets\Library\PackageCache\com.unity.mathematics@1.2.6
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
