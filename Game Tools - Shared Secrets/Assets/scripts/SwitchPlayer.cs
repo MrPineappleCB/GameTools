@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class SwitchPlayer : MonoBehaviour
 {
     public GameObject pic;
     public bool changeGlasses;
+    public GameObject volume;
 
     // AudioManager audioManager;
 
@@ -42,11 +44,13 @@ public class SwitchPlayer : MonoBehaviour
         if (pic.activeInHierarchy == false)
         {
             pic2.SetActive(true);
+            volume.SetActive(false);
 
         }
         else
         {
             pic2.SetActive(false);
+            volume.SetActive(true);
         }
     }
 
