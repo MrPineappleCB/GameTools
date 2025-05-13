@@ -56,7 +56,7 @@ public class SwitchPlayer : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             changeGlasses = !changeGlasses;
             print(changeGlasses);

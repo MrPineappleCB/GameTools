@@ -8,7 +8,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.8DF93126" = "shadergr"
+	"last_search.8DF93126" = "charac"
 	"OpenInspectorPreview.8DF93126" = "0"
 	"currentGroup.8DF93126" = null
 }
@@ -67,6 +67,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"c"
 	"shade"
 ]
 searchItemFavorites = [

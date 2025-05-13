@@ -33,6 +33,7 @@ public class Interact : MonoBehaviour
         {
             exitedTrigger.Invoke();
             insideTrigger = false;
+            Debug.Log("Exited");
         }
     }
 }

@@ -30,7 +30,7 @@ public class soundManager : MonoBehaviour
             }
 
             timer -= 1;
-            print(timer);
+            //print(timer);
             if (timer < 0)
             {
                 timer = 20;

@@ -58,13 +58,15 @@ public class SlidingPuzzle : MonoBehaviour
   }
 
   // Update is called once per frame
-  void Update() {
+  void Update() 
+  {
     // Check for completion.
-    if (!shuffling && CheckCompletion()) {
-      
+    if (!shuffling && CheckCompletion()) 
+    {
       shuffling = true;
       StartCoroutine(WaitShuffle(0.5f));
     }
+    
 
     // On click send out ray to see if we click a piece.
     if (Input.GetMouseButtonDown(0)) {
@@ -107,8 +109,9 @@ public class SlidingPuzzle : MonoBehaviour
         return false;
       }
     }
+    Debug.Log("Function ran");
     chest.SetActive(true);
-    gameObject.SetActive(false);
+    //gameObject.SetActive(false);
     return true;
   }
 
