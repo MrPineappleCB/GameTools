@@ -6,7 +6,7 @@ using UnityEngine.Rendering;
 public class SwitchPlayer : MonoBehaviour
 {
     public GameObject pic;
-    public bool changeGlasses;
+    public bool changeGlasses = true;
     public GameObject volume;
 
     // AudioManager audioManager;

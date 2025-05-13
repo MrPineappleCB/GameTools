@@ -55,6 +55,8 @@ public class SlidingPuzzle : MonoBehaviour
     pieces = new List<Transform>();
     size = 4;
     CreateGamePieces(0.01f);
+
+    Shuffle();
   }
 
   // Update is called once per frame
@@ -110,7 +112,8 @@ public class SlidingPuzzle : MonoBehaviour
       }
     }
     Debug.Log("Function ran");
-    chest.SetActive(true);
+    if (chest != null)
+      chest.SetActive(true);
     //gameObject.SetActive(false);
     return true;
   }

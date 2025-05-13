@@ -5,6 +5,7 @@ using UnityEngine;
 public class Animalkey : MonoBehaviour
 {
     public List<GameObject> statues = new List<GameObject>();
+    public List<GameObject> correct = new List<GameObject>();
     public int counter;
     public GameObject key;
 
@@ -15,12 +16,25 @@ public class Animalkey : MonoBehaviour
             if(animal.GetComponent<AnimalSwapping>().inCorrectSlot)
             {
                 counter += 1;
+                correct.Add(animal);
+                statues.Remove(animal);
             }
         }
 
-        if (counter == 2)
+        foreach(GameObject animal in correct)
         {
-            key.SetActive(true);
+            if (animal.GetComponent<AnimalSwapping>().inCorrectSlot == false)
+            {
+                counter -= 1;
+                statues.Add(animal);
+                correct.Remove(animal);
+            }
+        }
+
+        if (counter == 8)
+        {
+            if (key != null)
+                key.SetActive(true);
         }
     }
 }

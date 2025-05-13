@@ -36,4 +36,9 @@ public class Interact : MonoBehaviour
             Debug.Log("Exited");
         }
     }
+
+    public void Destroy()
+    {
+        Destroy(gameObject);
+    }
 }

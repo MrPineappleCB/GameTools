@@ -15,7 +15,8 @@ public class VaultCode : MonoBehaviour
     {
         if (red_button.button_number == 5 && purple_button.button_number == 4 && blue_button.button_number == 8 && yellow_button.button_number == 1)
         {
-            key.SetActive(true);
+            if (key != null)
+                key.SetActive(true);
         }
     }
 }
