@@ -47,12 +47,12 @@ public class AnimalSwapping : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.O))
         {
             counter += 1;
             push = -1;
         }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             counter -= 1;
             push = 1;
