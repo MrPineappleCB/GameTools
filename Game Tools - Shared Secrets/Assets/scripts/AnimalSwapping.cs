@@ -21,8 +21,11 @@ public class AnimalSwapping : MonoBehaviour
     private Vector3 _originalPos;
     private bool halfkey1 = false;
     private bool halfkey2 = false;
-    private int counter;
-    private int push;
+    public int counter;
+    public int push;
+
+    public int correctSlot;
+    public bool inCorrectSlot;
 
     void Awake()
     {
@@ -47,6 +50,16 @@ public class AnimalSwapping : MonoBehaviour
 
     void Update()
     {
+        if (counter >= 4)
+            counter = 4;
+        if (counter <= 1)
+            counter = 1;
+        
+        if (counter == correctSlot)
+            inCorrectSlot = true;
+        else
+            inCorrectSlot = false;
+
         if (Input.GetKeyDown(KeyCode.O))
         {
             counter += 1;

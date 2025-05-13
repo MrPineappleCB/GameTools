@@ -54,7 +54,7 @@ public class BasicPlayerMove : MonoBehaviour
             moveDirection.y -= gravity * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.R) && canMove)
+        if (Input.GetKey(KeyCode.C) && canMove)
         {
             characterController.height = crouchHeight;
             walkSpeed = crouchSpeed;

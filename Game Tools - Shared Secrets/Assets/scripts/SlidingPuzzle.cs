@@ -61,6 +61,11 @@ public class SlidingPuzzle : MonoBehaviour
   void Update() 
   {
     // Check for completion.
+    if (!shuffling && CheckCompletion()) 
+    {
+      shuffling = true;
+      StartCoroutine(WaitShuffle(0.5f));
+    }
     
 
     // On click send out ray to see if we click a piece.
@@ -77,11 +82,6 @@ public class SlidingPuzzle : MonoBehaviour
             if (SwapIfValid(i, +size, size)) { break; }
             if (SwapIfValid(i, -1, 0)) { break; }
             if (SwapIfValid(i, +1, size - 1)) { break; }
-            if (!shuffling && CheckCompletion()) 
-            {
-              shuffling = true;
-              StartCoroutine(WaitShuffle(0.5f));
-            }
           }
         }
       }
@@ -109,8 +109,9 @@ public class SlidingPuzzle : MonoBehaviour
         return false;
       }
     }
+    Debug.Log("Function ran");
     chest.SetActive(true);
-    gameObject.SetActive(false);
+    //gameObject.SetActive(false);
     return true;
   }
 
